@@ -21,6 +21,11 @@ body{
     border-radius: 7px;
     background:   #316A74;
     padding: 30px 30px 35px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active{
+    height: 525px;
 }
 
 .wrapper form{
@@ -31,11 +36,25 @@ body{
     justify-content: center;
     background: #fff;
     border-radius: 7px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active form{
+    height: 225px;
+    pointer-events: none;
 }
 
 form img{
     display: none;
     max-width: 148px;
+}
+
+.wrapper.active form img{
+    display: block;
+}
+
+.wrapper.active form .content{
+    display: none;
 }
 
 
@@ -62,6 +81,12 @@ form .content p{
     opacity: 0;
     margin-top: 25px;
     pointer-events: none;
+}
+
+.wrapper.active .details{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
 }
 
 .details textarea{
