@@ -18,7 +18,7 @@ function fetchRquest(formData, file)
         console.log(result)
         infoText.innerText = result ? "Upload QR Code to Scan" : "Couldn't Scan QR Code";
         if(!result) return;
-        wrappper.querySelector("textarea").innerText = result;
+        wrappper.querySelector("textarea").value = result;
         form.querySelector("img").src = URL.createObjectURL(file);
         wrappper.classList.add("active");
     }).catch(()=>{
