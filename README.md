@@ -30,6 +30,8 @@ The technologies used are:
 
 ## Advancement
 The functionality after the closing one is not working properly. One has to close the tab twice to use it. So one can fix it by forking.
+> The correction has been made and the in resolving the error following GitHub Member has helped me.
+> [Abdullah-Uppal](https://github.com/Abdullah-Uppal): A phenomenal coder from University of Engineering and Technology.
 <br>
 
 ## Developer
